@@ -186,7 +186,7 @@ cython_debug/
 #   be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #   and can be added to the global gitignore or merged into this file.  For a more nuclear
 #   option (not recommended) you can uncomment the following to ignore the entire idea folder.
-# .idea/
+.idea/
 
 # Abstra
 #   Abstra is an AI-powered process automation framework.
@@ -199,7 +199,7 @@ cython_debug/
 #   that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
 #   and can be added to the global gitignore or merged into this file. However, if you prefer, 
 #   you could uncomment the following to ignore the entire vscode folder
-# .vscode/
+.vscode/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
@@ -216,3 +216,79 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# =========================
+# Operating System Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Database Files
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.temp
+
+# =========================
+# Compressed Files
+# =========================
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# =========================
+# Secrets
+# =========================
+credentials.json
+config.ini
+secrets.json
+
+# ===================================
+# Visual Studio / SSDT
+# ===================================
+.vs/
+bin/
+obj/
+
+# User-specific Visual Studio files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===================================
+# PostgreSQL Backups & Dumps
+# ===================================
+*.backup
+*.dump
+*.sql.gz
+*.tar
+
+# ===================================
+# PostgreSQL Data Directory
+# (Never commit your database cluster)
+# ===================================
+pgdata/
+data/
+
+# ===================================
+# Local Database Files
+# ===================================
+*.mdf
+*.ldf
+*.ndf
