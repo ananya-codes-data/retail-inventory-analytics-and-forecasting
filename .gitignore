@@ -292,3 +292,11 @@ data/
 *.mdf
 *.ldf
 *.ndf
+
+# Data
+
+# Ignore raw datasets (download separately)
+data/raw/*
+
+# Keep folder structure
+!data/raw/.gitkeep
