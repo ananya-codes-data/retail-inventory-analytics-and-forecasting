@@ -284,7 +284,6 @@ obj/
 # (Never commit your database cluster)
 # ===================================
 pgdata/
-data/
 
 # ===================================
 # Local Database Files
