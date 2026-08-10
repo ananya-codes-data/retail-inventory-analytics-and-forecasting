@@ -4,7 +4,7 @@ Analyzing inventory performance, pricing strategy, demand patterns, and future d
 
 ## Business Problem
 
-Retailers lose money two ways: **stockouts** (lost sales) and **overstock** (dead capital). Both are often invisible until it's too late. This project uses daily store-product-level data to surface:
+Leadership has flagged recurring **stockouts** (lost sales) on fast-moving items alongside **overstock** (dead capital) on slow movers, and wants a data-driven view of demand, inventory health, and pricing sensitivity to guide replenishment decisions. The analysis focuses on:
 
 - Where stock is running low or products are chronically out of stock
 - Where inventory is sitting idle (dead stock)
@@ -31,9 +31,8 @@ This project uses the [Retail Store Inventory Forecasting Dataset](https://www.k
 |---|---|
 | Data cleaning & feature engineering | Python (pandas, NumPy) |
 | Statistical testing | Python (scipy) |
-| Analytical queries | SQL Server |
+| Analytical queries | Python (pandas, numpy) |
 | Dashboarding | Power BI (DAX) |
-| Forecasting extension | scikit-learn, XGBoost/LightGBM, PyTorch/Keras (LSTM, TFT) |
 
 ## Repository Structure
 
@@ -47,33 +46,22 @@ retail-inventory-analytics-and-forecasting/
 │
 ├── data/
 │   ├── raw/
-│   │   └── retail_store_inventory.csv          # raw Kaggle download (not committed if large)
+│   │   └── retail_store_inventory.csv         
 │   └── processed/
-│       └── retail_inventory_enriched.csv       # Phase 1 output — feeds SQL, Power BI, and models
+│       └── retail_inventory_enriched.csv     
 │
-├── notebooks/                                  # Python work — cleaning, EDA, stats, modeling
-│   ├── phase1_cleaning_feature_engineering.py  # ✅ built
-│   ├── phase3_statistical_testing.py           # significance tests (Q18) — pending
-│   └── phase5_forecasting_models.ipynb         # ARIMA/XGBoost/LSTM comparison — pending
-│
-├── sql/                                        # SQL Server query bank
-│   └── retail_inventory_analysis.sql           # ✅ built — Q1–17, Q22–24
+├── notebooks/                                  
+│   ├── phase1_cleaning_feature_engineering.py
+│   ├── phase3_statistical_testing.py           
+│   └── retail_inventory_analysis.sql          
 │
 ├── dashboards/
-│   └── retail_inventory_dashboard.pbix          # Power BI file — pending
+│   └── retail_inventory_dashboard.pbix          
 │
-├── reports/                                    # Written reasoning — not code, not queries
-│   ├── business_impact_summary.md              # Q22–24 translated into ₹ recommendations
-│   ├── causal_reasoning_notes.md               # Q20 — correlation vs causation discussion
-│   ├── experiment_design.md                    # Q21 — hypothetical A/B test design
-│   ├── scale_architecture_notes.md             # Q25 — design note for scaling to 500M rows
-│   └── executive_summary.md                    # Q26 — one-pager, the artifact reviewers read first
-│
-├── models/                                     # Phase 5 forecasting extension
-│   ├── xgboost_forecast.py
-│   ├── lstm_forecast.py
-│   └── model_comparison_results.csv
+├── reports/                                    
+│   ├── business_impact_summary.md              
+│   └── executive_summary.md              
 │
 └── docs/
-    └── data_dictionary.md                      # raw + engineered columns reference (just drafted)
+    └── data_dictionary.md                     
 ```
