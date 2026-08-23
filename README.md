@@ -51,9 +51,11 @@ retail-inventory-analytics-and-forecasting/
 │       └── retail_inventory_enriched.csv     
 │
 ├── notebooks/                                  
-│   ├── phase1_cleaning_feature_engineering.py
-│   ├── phase3_statistical_testing.py           
-│   └── retail_inventory_analysis.sql          
+│   ├── phase1_cleaning_feature_engineering.py         
+│   └── phase3_statistical_testing.py
+|
+├── sql/
+|   └── retail_inventory_analysis.sql         
 │
 ├── dashboards/
 │   └── retail_inventory_dashboard.pbix          
